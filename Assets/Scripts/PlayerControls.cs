@@ -10,6 +10,10 @@ public class PlayerControls : MonoBehaviour
     public float walk_speed = 5;
     public float turnspeed = 1;
     public bool b_walk;
+    public Animator[] anim;
+    public bool isMale, isFemale;
+
+    public playerCloth[] FemaleClothes, MaleCloths;
     // Start is called before the first frame update
     void Start()
     {
@@ -75,4 +79,10 @@ public class PlayerControls : MonoBehaviour
 
 
     
+}
+[System.Serializable]
+
+public class playerCloth
+{
+    public GameObject Torso, Legs, Head, Shoes;
 }
