@@ -2,16 +2,23 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+public enum clothType
+{
+    naked,ceo,elegant,casual
+}
+
 public class PlayerControls : MonoBehaviour
 {
     Vector2 initial, final;
     public List<Vector3> Positions;
+    public clothType current;
     int positionIndex;
     public float walk_speed = 5;
     public float turnspeed = 1;
     public bool b_walk;
     public Animator[] anim;
     public bool isMale, isFemale;
+    
 
     public playerCloth[] FemaleClothes, MaleCloths;
     // Start is called before the first frame update
