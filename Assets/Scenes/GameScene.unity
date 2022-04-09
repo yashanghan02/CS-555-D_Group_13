@@ -273,7 +273,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 539750075}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2, y: 0, z: 0}
+  m_LocalPosition: {x: 3, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 686717260}
@@ -314,7 +314,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 686717259}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.3, z: 11.89}
+  m_LocalPosition: {x: 0, y: 0.3, z: 45.3}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1247810969}
@@ -344,6 +344,8 @@ MonoBehaviour:
   BadItems:
   - {fileID: 8157886054851633742, guid: cf5bfe43e5d294e029688186b40bff4b, type: 3}
   player: {fileID: 1703993514}
+  startTime: 0
+  interval: 1
 --- !u!1001 &721768511
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -721,7 +723,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1247810968}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2, y: 0, z: 0}
+  m_LocalPosition: {x: -3, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 686717260}
@@ -951,6 +953,7 @@ GameObject:
   - component: {fileID: 1703993512}
   - component: {fileID: 1703993511}
   - component: {fileID: 1703993510}
+  - component: {fileID: 1703993515}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -971,11 +974,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Positions:
-  - {x: -2, y: 0, z: 0}
+  - {x: -3, y: 0, z: 0}
   - {x: 0, y: 0, z: 0}
-  - {x: 2, y: 0, z: 0}
+  - {x: 3, y: 0, z: 0}
   current: 0
-  walk_speed: 5
+  walk_speed: 3
   turnspeed: 10
   b_walk: 1
   anim:
@@ -983,6 +986,7 @@ MonoBehaviour:
   - {fileID: 721768529}
   isMale: 1
   isFemale: 0
+  Age: 99
   FemaleClothes:
   - Torso: {fileID: 2037016225}
     Legs: {fileID: 1793679335}
@@ -1097,6 +1101,22 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!54 &1703993515
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1703993509}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &1793679335 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1223063057327868503, guid: 2ad03c7689e636e49a48659082dc9212, type: 3}
