@@ -11,9 +11,11 @@ public class ItemSpawn : MonoBehaviour
     public GameObject[] BadItems;
     public Transform player;
 
+    public float startTime=3,interval=2;
+
     private void Start()
     {
-        InvokeRepeating(nameof(Spawn), 5, 5);
+        InvokeRepeating(nameof(Spawn), startTime, interval);
     }
 
 

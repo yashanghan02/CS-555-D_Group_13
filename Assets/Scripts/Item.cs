@@ -8,6 +8,7 @@ public class Item : MonoBehaviour
     public bool isGood;
 
     public GameObject[] itemModel;
+    public int[] HealthAffect;
     // Start is called before the first frame update
     private void Start()
     {
