@@ -314,7 +314,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 686717259}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.3, z: 45.3}
+  m_LocalPosition: {x: 0, y: 0.3, z: 27.11}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1247810969}
@@ -988,36 +988,44 @@ MonoBehaviour:
   isFemale: 0
   Age: 99
   FemaleClothes:
-  - Torso: {fileID: 2037016225}
+  - type: 0
+    Torso: {fileID: 2037016225}
     Legs: {fileID: 1793679335}
     Head: {fileID: 410845182}
     Shoes: {fileID: 1838511572}
-  - Torso: {fileID: 794866748}
+  - type: 0
+    Torso: {fileID: 794866748}
     Legs: {fileID: 1992594216}
     Head: {fileID: 1447184798}
     Shoes: {fileID: 1316568745}
-  - Torso: {fileID: 731091242}
+  - type: 0
+    Torso: {fileID: 731091242}
     Legs: {fileID: 566048085}
     Head: {fileID: 853384633}
     Shoes: {fileID: 1628567241}
-  - Torso: {fileID: 1970562244}
+  - type: 0
+    Torso: {fileID: 1970562244}
     Legs: {fileID: 1440977155}
     Head: {fileID: 1457674016}
     Shoes: {fileID: 647441926}
   MaleCloths:
-  - Torso: {fileID: 721768528}
+  - type: 0
+    Torso: {fileID: 721768528}
     Legs: {fileID: 721768527}
     Head: {fileID: 721768526}
     Shoes: {fileID: 721768525}
-  - Torso: {fileID: 721768524}
+  - type: 0
+    Torso: {fileID: 721768524}
     Legs: {fileID: 721768523}
     Head: {fileID: 721768522}
     Shoes: {fileID: 721768521}
-  - Torso: {fileID: 721768520}
+  - type: 0
+    Torso: {fileID: 721768520}
     Legs: {fileID: 721768519}
     Head: {fileID: 721768518}
     Shoes: {fileID: 721768517}
-  - Torso: {fileID: 721768516}
+  - type: 0
+    Torso: {fileID: 721768516}
     Legs: {fileID: 721768515}
     Head: {fileID: 721768514}
     Shoes: {fileID: 721768513}
@@ -1031,7 +1039,7 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: 0.5
+  m_Radius: 0.2
   m_Height: 2
   m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}
