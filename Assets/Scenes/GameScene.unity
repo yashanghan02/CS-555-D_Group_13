@@ -1992,6 +1992,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: platform
       objectReference: {fileID: 0}
+    - target: {fileID: 8528909095929014911, guid: 02f1a960a529e4132a9bd8b558a0a824, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 9153841506286811154, guid: 02f1a960a529e4132a9bd8b558a0a824, type: 3}
       propertyPath: m_Name
       value: Sensor
