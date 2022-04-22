@@ -21,6 +21,7 @@ public class UIManager : MonoBehaviour
     {
         Home.SetActive(false);
         GamePlay.SetActive(false);
+        GameManager.instance.startGame();
     }
 
     public void GameFinish()
