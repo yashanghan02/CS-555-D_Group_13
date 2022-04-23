@@ -6,6 +6,9 @@ public class GameManager : MonoBehaviour
 {
     // Start is called before the first frame update
     public static GameManager instance;
+    public int Age;
+    public int Score;
+    public int bestScore;
 
     private void Awake()
     {
@@ -16,14 +19,29 @@ public class GameManager : MonoBehaviour
     {
         Time.timeScale = 1;
     }
-<<<<<<< HEAD
-=======
 
     public void RestartGame()
     {
         UnityEngine.SceneManagement.SceneManager.LoadScene(0);
     }
->>>>>>> 342b86504ee61a54557915a895488c1b6ffa8208
+
+    public int TrySetHighScore()
+    {
+        int value = PlayerPrefs.GetInt("BestScore");
+        if (value < Score)
+        {
+            PlayerPrefs.SetInt("BestScore", Score);
+            value = Score;
+        }
+        return value;
+        
+    }
+
+    public void UpdateScore(int value)
+    {
+        Score += value;
+        UIManager.instance.AddPoints(Score);
+    }
     void Start()
     {
         
