@@ -16,6 +16,14 @@ public class GameManager : MonoBehaviour
     {
         Time.timeScale = 1;
     }
+<<<<<<< HEAD
+=======
+
+    public void RestartGame()
+    {
+        UnityEngine.SceneManagement.SceneManager.LoadScene(0);
+    }
+>>>>>>> 342b86504ee61a54557915a895488c1b6ffa8208
     void Start()
     {
         
